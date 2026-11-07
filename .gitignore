@@ -1,0 +1,8 @@
+.DS_Store
+*.pdf
+!**/previews/*.pdf
+tmp/
+node_modules/
+# PowerPoint build intermediates (powerpoint/README.md)
+powerpoint/source/raw.pptx
+powerpoint/source/theme.json
