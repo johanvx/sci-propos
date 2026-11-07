@@ -1,0 +1,7 @@
+# Generated previews and Office documents must not be text-merged or normalized.
+*.pdf binary
+*.png binary
+*.potx binary
+*.pptx binary
+*.dotx binary
+*.docx binary
