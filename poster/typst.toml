@@ -1,0 +1,16 @@
+[package]
+name = "sci-propos-poster"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Johan Xie <johanpoisson@outlook.com>"]
+license = "MIT"
+description = "Assertion-evidence posters for science and engineering: a sentence title, message headings over large evidence, and a QR band, in A0, 48 x 36 in and 16:9 e-poster sizes."
+keywords = ["poster", "assertion-evidence", "scientific", "engineering", "conference", "academic", "betterposter"]
+categories = ["poster"]
+compiler = "0.15.0"
+exclude = ["tests/", "previews/", "*.pdf"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
