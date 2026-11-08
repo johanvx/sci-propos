@@ -1,6 +1,9 @@
 // QR codes for links, with the link written under them.
+//
+// tiaoma is imported inside `qr-code`, not here: Typst fetches a package
+// only when an import runs, so documents without a QR code never download
+// or load it.
 
-#import "@preview/tiaoma:0.3.0"
 #import "config.typ": cfg
 
 /// A QR code for a link, with the link written under it.
@@ -10,6 +13,7 @@
 /// - caption (content, str, auto, none): `auto` writes the link without
 ///   "https://"; `none` writes nothing.
 #let qr-code(url, size: auto, caption: auto) = context {
+  import "@preview/tiaoma:0.3.0"
   let c = cfg()
   let size = if size == auto { c.qr-size } else { size }
   let caption = if caption == auto {
