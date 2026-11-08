@@ -4,6 +4,7 @@ version = "0.1.0"
 entrypoint = "lib.typ"
 authors = ["Johan Xie <johanpoisson@outlook.com>"]
 license = "MIT"
+repository = "https://github.com/johanvx/sci-propos"
 description = "Shared style of the sci-propos packages: palette, fonts, four languages, cards, code panels, tables, call-outs, QR codes."
 keywords = ["scientific", "engineering", "style", "academic"]
 categories = ["components"]

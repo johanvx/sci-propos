@@ -4,6 +4,7 @@ version = "0.1.0"
 entrypoint = "lib.typ"
 authors = ["Johan Xie <johanpoisson@outlook.com>"]
 license = "MIT"
+repository = "https://github.com/johanvx/sci-propos"
 description = "Assertion-evidence slides for scientific and engineering talks: sentence leads, outline and section pages, conclusion with contact band, code beside its output."
 keywords = ["presentation", "slides", "touying", "assertion-evidence", "scientific", "engineering", "academic"]
 categories = ["presentation"]

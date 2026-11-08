@@ -4,6 +4,7 @@ version = "0.1.0"
 entrypoint = "lib.typ"
 authors = ["Johan Xie <johanpoisson@outlook.com>"]
 license = "MIT"
+repository = "https://github.com/johanvx/sci-propos"
 description = "Letters, memo reports, formal and laboratory reports, and research papers for science and engineering, in the style of Alley's Craft of Scientific Writing."
 keywords = ["letter", "memo", "report", "paper", "laboratory", "scientific", "engineering", "academic"]
 categories = ["report", "paper", "office"]
