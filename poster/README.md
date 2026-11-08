@@ -16,6 +16,8 @@ The rules come from Michael Alley's poster guidance (craftscicom.org), the
 MIT Communication Lab's #evenbetterposter and Zen Faulkes's *Better
 Posters*, paraphrased; no text or templates of theirs are included.
 
+![The template at A0, 48 x 36 in and 16:9, then the sample poster in French, Simplified and Traditional Chinese](https://raw.githubusercontent.com/johanvx/sci-propos/v0.1.0/poster/previews/sheet.png)
+
 ## Start
 
 ```typst
@@ -45,16 +47,14 @@ Two or three sentences at most.
 
 `typst init @preview/sci-propos-poster:0.1.0 my-poster` starts from the
 template, whose comments say what each part needs. The repository's
-`examples/river-sensor/poster.typ` is a complete poster in three sizes.
+[`examples/river-sensor/poster.typ`](https://github.com/johanvx/sci-propos/blob/v0.1.0/examples/river-sensor/poster.typ)
+is a complete poster in three sizes.
 
-## Installing before publication
+## Using it before publication
 
-Copy this folder, and `core/` from the repository, to Typst's package folder
-as `sci-propos-poster/0.1.0/` and `sci-propos-core/0.1.0/` (macOS:
-`~/Library/Application Support/typst/packages/preview/`; Linux:
-`~/.local/share/typst/packages/preview/`; Windows:
-`%APPDATA%\typst\packages\preview\`). Delete the copies once the packages
-are published.
+To use the package before it reaches Typst Universe, or to work on it, see
+[the repository](https://github.com/johanvx/sci-propos): its README says how to point Typst at a
+checkout.
 
 ## Options
 
@@ -111,8 +111,12 @@ small print, it reads at 1.5 m on the poster.
 
 ## Tests
 
-`tests/README.md` lists the test files and their expected page counts.
+[`tests/README.md`](https://github.com/johanvx/sci-propos/blob/v0.1.0/poster/tests/README.md) lists the test files and
+their expected page counts.
 
 ## License
 
-MIT.
+The code is under the MIT license (`LICENSE`). The starter files in
+`template/`, which `typst init` copies into your project, are under MIT-0
+(`LICENSE-MIT-0`): you may use, change and share the documents you make
+from them without keeping any notice.

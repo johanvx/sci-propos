@@ -2,7 +2,11 @@
 
 Slides for scientific and engineering talks, on [Touying](https://touying-typ.github.io), in the assertion-evidence style (Michael Alley, *The Craft of Scientific Presentations*): each slide has a short title for finding it, a lead line that states its point as one sentence, and evidence (a figure, a table, an equation, code beside its output). Outline and section pages, a conclusion slide that stays up during questions, side cards, and a handout that puts each slide above its notes. English, French, Simplified and Traditional Chinese.
 
-Part of the sci-propos family, with `sci-propos-writing` and `sci-propos-poster`; the shared style lives in `sci-propos-core`. Requires Typst 0.15 or newer, Touying 0.8, `sci-propos-core` 0.1.0 and tiaoma 0.3 (QR codes).
+Part of the sci-propos family, with [`sci-propos-writing`](https://typst.app/universe/package/sci-propos-writing) and [`sci-propos-poster`](https://typst.app/universe/package/sci-propos-poster); the shared style lives in [`sci-propos-core`](https://typst.app/universe/package/sci-propos-core). Requires Typst 0.15 or newer, Touying 0.8 and `sci-propos-core` 0.1.0; tiaoma 0.3 is downloaded only if the deck draws a QR code.
+
+![The sample deck: title page, outline and section pages, assertion-evidence slides with figures and a table, the conclusion and contact slides](https://raw.githubusercontent.com/johanvx/sci-propos/v0.1.0/presentation/previews/sheet-assertion-evidence.png)
+
+[More rendered samples](https://github.com/johanvx/sci-propos/tree/v0.1.0/presentation/previews): French and Chinese decks, a section map, a handout with notes, a serif deck.
 
 ## Start
 
@@ -33,17 +37,14 @@ what the tests showed       // the section's description in the outline
 
 No scripts are needed: `typst compile main.typ` builds the deck. A few theme options, or `--input` values on the command line, tell the theme which images and fonts you have (see *Building*).
 
-## Installing before publication
+## Starting a deck
 
-Until the packages are on Typst Universe, copy this folder and `core/` (each with its `typst.toml`, `lib.typ` and `src/`) to Typst's package folder, as `sci-propos-presentation/0.1.0/` and `sci-propos-core/0.1.0/`. Typst looks there before downloading, so the `@preview` imports work. Touying and tiaoma still download on first compile. The folders:
+`typst init @preview/sci-propos-presentation:0.1.0 my-talk` creates a deck
+from the template, with a comment on each slide saying what it needs.
 
-| System | Folder |
-|---|---|
-| macOS | `~/Library/Application Support/typst/packages/preview/<name>/0.1.0/` |
-| Linux | `~/.local/share/typst/packages/preview/<name>/0.1.0/` (or under `$XDG_DATA_HOME`) |
-| Windows | `%APPDATA%\typst\packages\preview\<name>\0.1.0\` |
-
-Delete those copies once the packages are published. To start a new deck from the template: `typst init @preview/sci-propos-presentation:0.1.0 my-talk`. The repository README says how to keep the copies in step with the repository while you develop.
+To use the package before it reaches Typst Universe, or to work on it, see
+[the repository](https://github.com/johanvx/sci-propos): its README says how to point Typst at a
+checkout.
 
 ## Building
 
@@ -253,4 +254,8 @@ Anything not listed shows as a placeholder with the exact path it expects, so a 
 
 ## License
 
-MIT. The assertion-evidence rules are paraphrased from Michael Alley's books and websites, which remain his; no text or templates of his are included.
+The code is under the MIT license (`LICENSE`). The starter files in
+`template/`, which `typst init` copies into your project, are under MIT-0
+(`LICENSE-MIT-0`): you may use, change and share the documents you make
+from them without keeping any notice.
+The assertion-evidence rules are paraphrased from Michael Alley's books and websites, which remain his; no text or templates of his are included.

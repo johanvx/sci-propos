@@ -38,7 +38,8 @@ Copy `core/` to `<package folder>/sci-propos-core/0.1.0/`,
 `presentation/` to `<package folder>/sci-propos-presentation/0.1.0/`,
 `writing/` to `<package folder>/sci-propos-writing/0.1.0/` and `poster/` to
 `<package folder>/sci-propos-poster/0.1.0/`.
-Touying 0.8 and tiaoma 0.3 still download on the first compile.
+Touying 0.8 still downloads on the first compile, and tiaoma 0.3 the first
+time a document draws a QR code.
 
 While developing, a symbolic link instead of a copy keeps Typst reading the
 repository itself (macOS, Linux):
@@ -68,6 +69,8 @@ Word, the commands in `powerpoint/README.md` and `word/README.md`).
 
 ## License
 
-MIT, see `LICENSE`. The assertion-evidence rules are paraphrased from
+MIT, see `LICENSE`; the starter files in each package's `template/` folder
+are MIT-0 (`LICENSE-MIT-0`), so documents made from them carry no notice.
+The assertion-evidence rules are paraphrased from
 Michael Alley's books and websites (craftscicom.org, assertion-evidence.com),
 which remain his; no text, slides or templates of his are included.

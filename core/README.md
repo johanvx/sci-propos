@@ -1,8 +1,9 @@
 # sci-propos-core
 
-The shared style of the sci-propos packages: `sci-propos-presentation`
-(slides), `sci-propos-writing` (letters, reports, papers) and
-`sci-propos-poster` (posters). You rarely import it yourself; the other
+The shared style of the sci-propos packages:
+[`sci-propos-presentation`](https://typst.app/universe/package/sci-propos-presentation) (slides),
+[`sci-propos-writing`](https://typst.app/universe/package/sci-propos-writing) (letters, reports, papers)
+and [`sci-propos-poster`](https://typst.app/universe/package/sci-propos-poster) (posters). You rarely import it yourself; the other
 packages import it and re-export what a document needs.
 
 It holds:
@@ -23,8 +24,9 @@ Helpers read the configuration with `cfg()` inside `context`. The
 configuration lives in one state, `sp-config`, so a document that uses
 several sci-propos packages shares it.
 
-Requires Typst 0.15 and tiaoma 0.3 (QR codes). Installing before
-publication: see the repository README.
+Requires Typst 0.15. QR codes use tiaoma 0.3, which Typst downloads and
+loads only when a document draws one. Source, tests and
+development notes: [the repository](https://github.com/johanvx/sci-propos).
 
 ## License
 

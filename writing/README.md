@@ -11,8 +11,9 @@ Scientific Writing* (4th ed., Springer, 2018), Appendix D:
 - appendices that each start on a new page, with figures numbered A-1, A-2;
 - the conventions of each language for letters, paragraphs and numbering.
 
-Emails are plain text and have no template here; the `scientific-writing`
-skill drafts them.
+Emails are plain text and have no template here.
+
+![First pages of a letter, a memo report, a laboratory report and a paper, in English, French, Simplified and Traditional Chinese](https://raw.githubusercontent.com/johanvx/sci-propos/v0.1.0/writing/previews/sheet-languages.png)
 
 ## Start
 
@@ -36,17 +37,14 @@ skill drafts them.
 ```
 
 `typst init @preview/sci-propos-writing:0.1.0 my-report` starts from the
-report template. The gallery has a complete sample of every document type
-in every language.
+report template. [The gallery](https://github.com/johanvx/sci-propos/tree/v0.1.0/writing/gallery) has a complete sample of
+every document type in every language.
 
-## Installing before publication
+## Using it before publication
 
-Copy this folder, and `core/` from the repository, to Typst's package folder
-as `sci-propos-writing/0.1.0/` and `sci-propos-core/0.1.0/` (macOS:
-`~/Library/Application Support/typst/packages/preview/`; Linux:
-`~/.local/share/typst/packages/preview/`; Windows:
-`%APPDATA%\typst\packages\preview\`). Delete the copies once the packages
-are published.
+To use the package before it reaches Typst Universe, or to work on it, see
+[the repository](https://github.com/johanvx/sci-propos): its README says how to point Typst at a
+checkout.
 
 ## Document types
 
@@ -149,18 +147,24 @@ Noto Serif and Noto Sans (Noto Serif SC/TC and Noto Sans SC/TC for Chinese),
 Noto Sans Mono for code, New Computer Modern Math. Typst bundles only the
 math font; install the others. `--input fonts="$(typst fonts | paste -sd, -)"`
 makes the package pick the first installed candidate without warnings (see
-the `sci-propos-presentation` README for the details, which are the same).
+the [`sci-propos-presentation`](https://typst.app/universe/package/sci-propos-presentation) README for
+the details, which are the same).
 
 ## Gallery and tests
 
-`gallery/` holds the samples, built with `typst compile --root .
-gallery/<file>.typ`: `letter.typ` (`--input lang=en|fr|zh-Hans|zh-Hant`,
+[`gallery/`](https://github.com/johanvx/sci-propos/tree/v0.1.0/writing/gallery) in the repository holds the samples,
+built with `typst compile --root . gallery/<file>.typ`: `letter.typ` (`--input lang=en|fr|zh-Hans|zh-Hant`,
 `--input paper=us-letter`), and `memo-*.typ`, `lab-*.typ`, `paper-*.typ` in
 each language. All names and data in them are placeholders or illustrative.
-`tests/README.md` lists the test files and their expected page counts;
-`previews/` has the gallery rendered as PDFs.
+[`tests/README.md`](https://github.com/johanvx/sci-propos/blob/v0.1.0/writing/tests/README.md) lists the test files and
+their expected page counts; [`previews/`](https://github.com/johanvx/sci-propos/tree/v0.1.0/writing/previews) has the
+gallery rendered as PDFs.
 
 ## License
 
-MIT. The format rules are paraphrased from Michael Alley's books and
+The code is under the MIT license (`LICENSE`). The starter files in
+`template/`, which `typst init` copies into your project, are under MIT-0
+(`LICENSE-MIT-0`): you may use, change and share the documents you make
+from them without keeping any notice.
+The format rules are paraphrased from Michael Alley's books and
 websites, which remain his; no text or templates of his are included.
